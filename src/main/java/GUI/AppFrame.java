@@ -24,6 +24,7 @@ public class AppFrame extends JFrame implements ActionListener{
     JButton decompressButton;
     
     AppFrame(){
+        this.setLayout(null);
       this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       
       compressButton=new JButton("Select file to compress");
@@ -31,7 +32,7 @@ public class AppFrame extends JFrame implements ActionListener{
       compressButton.addActionListener(this);
       
       decompressButton=new JButton("Select file to decompress");
-      decompressButton.setBounds(20,100,200,300);
+      decompressButton.setBounds(250,100,200,300);
       decompressButton.addActionListener(this);
       
       this.add(compressButton);
